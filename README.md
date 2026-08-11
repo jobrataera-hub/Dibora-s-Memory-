@@ -1,6 +1,6 @@
 # Dibora Birthday — production starter
 
-## Features
+## Features 
 - Mobile-first luxury birthday experience
 - Firestore memory timeline
 - Firebase Storage photo/video uploads
