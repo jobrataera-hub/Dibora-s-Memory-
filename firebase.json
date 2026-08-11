@@ -1,1 +1,10 @@
-{"firestore":{"rules":"firestore.rules"},"storage":{"rules":"storage.rules"},"hosting":{"public":".","ignore":["firebase.json","**/.*","**/node_modules/**"]}}
+{"firestore":{"rules":"firestore.rules"},"storage":{"rules":"storage.rules"},"hosting":{"public":".","ignore": [
+  "firebase.json",
+  "firestore.rules",
+  "storage.rules",
+  "package.json",
+  "package-lock.json",
+  "README.md",
+  "**/.*",
+  "**/node_modules/**"
+]}}
