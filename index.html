@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0e0718"><meta name="description" content="Dibora — a living birthday memory book.">
+<title>Dibora — A Celebration of Life</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="intro" class="intro"><div class="intro-star">✦</div><p>Every life is a beautiful story...</p><strong>Today, we celebrate Dibora.</strong></div>
+<header class="topbar"><a class="brand" href="#home">Dibora</a><div><button id="musicBtn" class="icon-btn">♫</button><button id="menuBtn" class="icon-btn">☰</button></div></header>
+<nav id="drawer" class="drawer">
+<a href="#home">Home</a><a href="#letter">Letter</a><a href="#memories">Memories</a><a href="#wishes">Wall of Love</a><a href="#games">Fun Zone</a><a href="#wishing-sky">Wishing Sky</a><a href="#time-capsule">Time Capsule</a><a href="#music-room">Music Room</a>
+</nav>
+<main>
+<section id="home" class="section hero"><p class="eyebrow">A DIGITAL LEGACY • 2026</p><h1>Happy Birthday,<br><span>Dibora</span></h1><p class="hero-copy">A living collection of your memories, dreams, laughter, milestones, and the people who love you.</p><div class="hero-actions"><a class="btn primary" href="#memories">Explore her story</a><a class="btn ghost" href="#wishes">Leave a wish</a></div></section>
+
+<section id="letter" class="section narrow"><div class="section-heading"><p class="eyebrow">FROM YOUR BROTHER</p><h2>A little letter for you</h2></div><article class="letter-card">
+<p>Dear Dibora,</p><p>Happy Birthday to a truly special sister. I hope this new chapter brings you peace, courage, beautiful opportunities, and countless reasons to smile.</p>
+<p>May God guide your steps, protect your heart, and help your dreams become real. Keep growing, keep shining, and never forget how deeply you are loved.</p>
+<p>No matter where life takes us, I will always be proud to call you my sister.</p><p class="signature">With endless love,<br><strong>Your Brother ❤️</strong></p>
+</article></section>
+
+<section id="memories" class="section"><div class="section-heading"><p class="eyebrow">THE LIVING ARCHIVE</p><h2>Garden of Memories</h2><p>Every memory added by your family becomes another chapter in Dibora's story.</p></div><div id="memoryTimeline" class="timeline"><div class="loading">Loading memories…</div></div></section>
+
+<section id="wishes" class="section narrow"><div class="section-heading"><p class="eyebrow">FROM PEOPLE WHO LOVE HER</p><h2>Wall of Love</h2><p>Leave a message for Dibora. Your wish will appear after approval.</p></div>
+<form id="wishForm" class="glass-form"><input id="wishName" maxlength="60" placeholder="Your name" required><textarea id="wishText" maxlength="500" rows="4" placeholder="Write a beautiful birthday wish…" required></textarea><button class="btn primary">Send my wish ✨</button><small id="wishStatus" class="status"></small></form>
+<div id="wishList" class="wish-grid"></div></section>
+
+<section id="games" class="section"><div class="section-heading"><p class="eyebrow">MADE FOR FUN</p><h2>Birthday Fun Zone</h2><p>Three small games made especially for Dibora.</p></div>
+<div class="game-tabs"><button class="game-tab active" data-game="balloon">🎈 Balloon Pop</button><button class="game-tab" data-game="quiz">💝 Birthday Quiz</button><button class="game-tab" data-game="memory">🧠 Memory Match</button></div><div id="gamePanel" class="game-panel"></div></section>
+
+<section id="wishing-sky" class="section sky-section"><div class="section-heading"><p class="eyebrow">A SKY FULL OF LOVE</p><h2>Wishing Sky ✦</h2><p>Write a wish and watch it become a star.</p></div>
+<form id="skyForm" class="sky-form"><input id="skyWish" maxlength="160" placeholder="My wish for Dibora is…" required><button class="btn primary">Release a star ✦</button></form><div id="sky" class="sky"></div></section>
+
+<section id="time-capsule" class="section narrow"><div class="section-heading"><p class="eyebrow">FOR THE FUTURE</p><h2>Time Capsule</h2><p>A message from today for a future Dibora.</p></div>
+<div class="capsule-card"><div class="capsule-icon">⌛</div><h3>Dear Future Dibora…</h3><textarea id="capsuleText" rows="5" maxlength="700" placeholder="What do you want future Dibora to remember?"></textarea><button id="saveCapsule" class="btn primary">Seal this memory</button><p id="capsuleStatus" class="status"></p></div></section>
+
+<section id="music-room" class="section narrow"><div class="section-heading"><p class="eyebrow">SOUNDS OF THE DAY</p><h2>Music Room 🎹</h2><p>Play a gentle birthday melody or tap the piano yourself.</p></div>
+<div class="music-card"><button id="melodyBtn" class="play-orb">▶</button><div><span id="melodyState">PAUSED</span><h3>Birthday Melody</h3></div></div>
+<div class="piano" id="piano"><button data-note="261.63">C4<br><small>Do</small></button><button data-note="293.66">D4<br><small>Re</small></button><button data-note="329.63">E4<br><small>Mi</small></button><button data-note="349.23">F4<br><small>Fa</small></button><button data-note="392">G4<br><small>Sol</small></button><button data-note="440">A4<br><small>La</small></button><button data-note="493.88">B4<br><small>Si</small></button><button data-note="523.25">C5<br><small>Do</small></button></div></section>
+
+<section class="section finale"><div class="finale-inner"><div class="constellation">✦ ✧ ✦</div><h2>Dibora</h2><p>May every new year of your life become another beautiful chapter.</p><button id="fireworksBtn" class="btn primary">Make a wish ✨</button></div><canvas id="fireworks"></canvas></section>
+</main>
+<footer class="footer"><span>Made with love for Dibora.</span><a href="/admin.html">Private Admin</a></footer>
+<div id="toast" class="toast"></div>
+<script type="module" src="/app.js"></script>
+</body></html>
